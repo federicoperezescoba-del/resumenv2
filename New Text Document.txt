@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LegoBot Explorers</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+background:#fdf5e6;
+font-family:Arial;
+margin:0;
+color:#333;
+}
+
+header{
+text-align:center;
+padding:20px;
+}
+
+header h1{
+color:#d35400;
+}
+
+/* MENU */
+
+.menu{
+text-align:center;
+background:white;
+padding:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.menu a{
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+color:#d35400;
+}
+
+.menu a:hover{
+color:#ff8c42;
+border-bottom:2px solid #d35400;
+}
+
+/* BANNER */
+
+.banner{
+background:linear-gradient(135deg,#d35400,#ff8c42);
+color:white;
+padding:60px 20px;
+text-align:center;
+animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(-20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+.banner-tags{
+margin-top:20px;
+}
+
+.tag{
+display:inline-block;
+background:rgba(255,255,255,0.2);
+padding:10px 18px;
+margin:6px;
+border-radius:25px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+.tag:hover{
+background:white;
+color:#d35400;
+transform:scale(1.1);
+}
+
+.banner-btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 25px;
+background:white;
+color:#d35400;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* CONTENIDO */
+
+main{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+img{
+width:100%;
+border-radius:10px;
+margin:20px 0;
+}
+
+/* BUSCADOR */
+
+#buscador{
+padding:8px;
+width:100%;
+max-width:300px;
+margin-bottom:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+#resultados{
+list-style:none;
+padding:0;
+}
+
+#resultados li{
+padding:5px;
+color:#d35400;
+}
+
+/* CONTACTO */
+
+#contacto{
+background:white;
+padding:20px;
+border-radius:10px;
+margin-top:30px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* REDES */
+
+.redes{
+text-align:center;
+margin-top:20px;
+}
+
+.red{
+display:inline-flex;
+align-items:center;
+gap:8px;
+margin:10px;
+padding:12px 18px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.red:hover{
+transform:translateY(-5px) scale(1.1);
+box-shadow:0 8px 15px rgba(0,0,0,0.2);
+}
+
+.instagram{background:#e1306c;}
+.whatsapp{background:#25d366;}
+.tiktok{background:black;}
+
+@media (max-width:600px){
+.menu a{display:block; margin:10px 0;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Bienvenidos a un Mundo Tecnológico</h2>
+<h1>LegoBot Explorers</h1>
+</header>
+
+<nav class="menu">
+<a href="#">Inicio</a>
+<a href="https://es.wikipedia.org/wiki/Rob%C3%B3tica" target="_blank">Robots</a>
+<a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_de_robots" target="_blank">Cursos</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<div class="banner">
+
+<h1>Construye el Futuro con LEGO Robots</h1>
+
+<p>Aprende creando robots reales paso a paso.</p>
+
+<div class="banner-tags">
+
+<a href="https://es.wikipedia.org/wiki/Rob%C3%B3tica" target="_blank" class="tag">
+Robótica (Teoría)
+</a>
+
+<a href="https://www.youtube.com/results?search_query=robotica+lego" target="_blank" class="tag">
+Robótica con LEGO (Video)
+</a>
+
+<a href="https://www.educaciontrespuntocero.com/tecnologia/robotica-educativa/" target="_blank" class="tag">
+Robótica Educativa
+</a>
+
+<a href="https://www.youtube.com/results?search_query=proyectos+robotica+faciles" target="_blank" class="tag">
+Proyectos de Robots
+</a>
+
+<a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_de_robots" target="_blank" class="tag">
+Programación de Robots
+</a>
+
+<a href="https://concepto.de/robotica/" target="_blank" class="tag">
+Conceptos de Robótica
+</a>
+
+</div>
+
+<a href="#contacto" class="banner-btn">Inscríbete Ahora</a>
+
+</div>
+
+<main>
+
+<input type="text" id="buscador" placeholder="Buscar...">
+
+<ul id="resultados">
+<li>Piezas LEGO para robots</li>
+<li>Cómo construir robots</li>
+<li>Programación de robots</li>
+<li>Tipos de robots</li>
+<li>Evolución de la robótica</li>
+</ul>
+
+<img src="2.png" alt="Robot LEGO">
+
+<h2>Aprende Robótica con LEGO</h2>
+<p>
+En LegoBot Explorers aprenderás a construir y programar robots usando piezas LEGO,
+desarrollando habilidades en tecnología, lógica y creatividad de forma divertida.
+</p>
+
+<section id="contacto">
+
+<h2>Contacto</h2>
+
+<p><i class="fa-solid fa-phone"></i> +1 829 487 2803</p>
+<p><i class="fa-solid fa-envelope"></i> basorajoseph@gmail.com</p>
+<p><i class="fa-solid fa-location-dot"></i> Santo Domingo Este, Boca Chica</p>
+
+<div class="redes">
+
+<a href="https://www.instagram.com/" target="_blank" class="red instagram">
+<i class="fa-brands fa-instagram"></i> Instagram
+</a>
+
+<a href="https://wa.me/18294872803" target="_blank" class="red whatsapp">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+
+<a href="https://www.tiktok.com/" target="_blank" class="red tiktok">
+<i class="fa-brands fa-tiktok"></i> TikTok
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+<script>
+const buscador = document.getElementById("buscador");
+const lista = document.querySelectorAll("#resultados li");
+
+buscador.addEventListener("keyup", function() {
+const texto = buscador.value.toLowerCase();
+
+lista.forEach(item => {
+const contenido = item.textContent.toLowerCase();
+item.style.display = contenido.includes(texto) ? "block" : "none";
+});
+});
+</script>
+
+</body>
+</html>
